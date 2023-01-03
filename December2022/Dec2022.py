@@ -101,8 +101,6 @@ def dfs(row, col, front, left, back, right, top, bottom, path):
   path.pop()
   return []
 
-
-# die value being None means unknown; python stuff
 passed = dfs(0, 0, None, None, None, None, None, None, [])
 
 seen = set(passed)  # check if element in passed in O(1) time
